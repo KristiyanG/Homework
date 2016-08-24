@@ -16,9 +16,14 @@ public class Demo {
 		library.addReading(schoolBook2);
 		
 		Reader pesho = new Reader("Pesho ",library);
-		pesho.takeBook("PlayBoy");
+		Reader gosho = new Reader("Gosho ",library);
+		pesho.takeBook("Java");
+		gosho.takeBook("Fizika");
 		Thread.sleep(4000);
+		library.generateFile();
 		pesho.returnBook();
+		gosho.returnBook();
+		
 		
 	}
 }
